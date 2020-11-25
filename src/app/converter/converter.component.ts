@@ -23,6 +23,10 @@ export class ConverterComponent implements OnInit {
 
   }
 
+  getAllCurrencies():string[]{
+    return Object.keys(this.rates);
+
+  }
 
   constructor(private currencyExchangeService:ExchangeRatesService) {
    }
